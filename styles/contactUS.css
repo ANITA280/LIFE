@@ -1,0 +1,77 @@
+/* styling the container for the form */
+#container{
+    width:1200px;
+    overflow: hidden;
+    padding:2%;
+    
+
+  }
+  /* positioning the content of the form */
+   #content{
+    padding-right:200px;
+    float:right;
+    min-height:600px;
+ 
+  }
+  #content div{
+    margin-bottom: 2%;
+  }
+
+  /* fixing the label's style to be of the same width */
+  .label{
+  width:250px;
+  float:left;
+  
+  }
+  
+  /* styling the submit and reset buttons */
+  #registration_submit{
+    background-color: rgba(255, 255, 255, 0.514);
+    width:300px;
+  border: solid 2px rgb(11, 64, 85);
+  padding: 2%;
+  border-radius: 15px;
+  margin-top: 2%;
+  font-size: large;
+  margin-left: 200px;
+  display: inline;
+  }
+
+  #registration_reset {
+    background-color: rgba(255, 255, 255, 0.514);
+    width:300px;
+    border: solid 2px rgb(11, 64, 85);
+  padding: 2%;
+  border-radius: 15px;
+  margin-top: 2%;
+  font-size: large;
+  display: inline;
+  }
+
+  /* styling the input boxes */
+  input,textarea,#Found{
+    background-color: rgb(250, 255, 255);
+    width: 300px;
+    color: black;
+   
+
+  }
+
+  
+  h2{
+    margin-bottom: 4%;
+  }
+/* styling the adress section */
+  address {
+    display: block;
+    font-style: italic;
+    margin: 2%;
+  }
+
+  .about{
+    margin:2% ;
+  }
+  form .error {
+    color: #ff0000;
+   display: block;
+  }

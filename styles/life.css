@@ -1,0 +1,408 @@
+/* setting the same backgroung-color for the body of all the pages */
+
+body {
+  background-color: #ceeff0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  color: white;
+}
+
+/* start of framework/layout styling (answer for q(e)) */
+
+/* declaring the four sections/area of the grid */
+
+.item1 {
+  grid-area: header;
+  min-height: 30vh;
+}
+
+.item2 {
+  grid-area: nav;
+  min-height: 5vh;
+}
+
+.item3 {
+  grid-area: main;
+  background-image: url("../images/3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.item5 {
+  grid-area: footer;
+  min-height: 30vh;
+}
+
+.item2 a {
+  min-height: 5vh;
+}
+
+/* assigning the different grids for each sections/areas */
+
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 50%;
+  grid-template-areas: 'header header header' 'nav nav nav' 'main main main' 'footer footer footer';
+  grid-gap: 10px;
+  margin: auto;
+  padding: 5px;
+}
+
+/* setting some common properties for all the grid areas */
+
+.grid-container>div {
+  background-color: rgba(38, 122, 148, 0.7);
+  text-align: center;
+  font-size: 30px;
+}
+
+/* setting the properties for the navigation bar and fixing it's position*/
+
+.item2 {
+  padding: 0;
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  z-index: 1;
+}
+
+/* setting the properties for the links of the navigation bar */
+
+.item2 a {
+  padding: 0% 2% 0% 2%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+
+.item2 a:hover {
+  background-color: grey;
+}
+
+.item2 .current {
+  background-color: rgb(7, 51, 68);
+}
+
+/* highlighting the current page name on nav bar */
+
+.current {
+  background-color: rgb(7, 51, 68);
+}
+
+/* adding styles to the page name */
+
+#name {
+  text-align: center;
+  color: rgba(243, 243, 243);
+  font-size: 155px;
+  animation: mymove 5s infinite;
+  margin: "auto";
+  padding: 4%;
+}
+
+/* adding some animations to the page name */
+
+@keyframes mymove {
+  50% {
+    text-shadow: 10px 20px 30px rgb(178, 224, 238);
+  }
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  min-width: 300px;
+  min-height: 300px;
+  background-image: url("../images/Healthemind.png");
+  border-radius: 50%;
+}
+
+/* styling of the logo at the header */
+
+#logo2 {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  min-width: 300px;
+  min-height: 300px;
+  background-image: url("../images/Healthemind2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* styling of the head container containing the slogan and name on header */
+
+#head {
+  position: relative;
+  width: 100%;
+  background-color: #5A9BAF;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif
+}
+
+/* styling of the slogan on header */
+
+#tagline {
+  position: absolute;
+  top: 28vh;
+  left: 78vh;
+}
+
+/* footer links styling */
+
+.item5 a {
+  display: block;
+  margin-bottom: 12%;
+  font-size: large;
+}
+
+/* footer link positioning  */
+
+#box1 {
+  position: absolute;
+  top: 35px;
+  left: 20%;
+}
+
+#box2 {
+  position: absolute;
+  top: 5px;
+  right: 35%;
+}
+
+#box3 {
+  position: absolute;
+  top: 25px;
+  right: 15%;
+}
+
+#box4 {
+  position: absolute;
+  top: 35px;
+  left: 35%;
+}
+
+.boxes {
+  position: relative;
+}
+
+/* Logo positioning on the footer */
+
+.logoFoot {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  min-width: 200px;
+  min-height: 200px;
+  background-image: url("../images/Healthemind.png");
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* animating name on the footer */
+
+#namefoot {
+  animation: mymove 5s infinite;
+}
+
+/* end of framework/layout styling for all the pages */
+
+/* services pages main content area using boxes */
+
+.rectangles1 {
+  position: absolute;
+  top: 50px;
+  left: 2px;
+  margin: 10px;
+  height: 600px;
+  width: 380px;
+}
+
+.rectangles2 {
+  position: absolute;
+  top: 50px;
+  left: 420px;
+  margin: 10px;
+  background-color: white;
+  height: 600px;
+  width: 380px;
+}
+
+.rectangles3 {
+  position: absolute;
+  top: 50px;
+  left: 820px;
+  margin: 10px;
+  background-color: white;
+  height: 600px;
+  width: 380px;
+}
+
+.rectangles4 {
+  position: absolute;
+  top: 50px;
+  left: 1240px;
+  margin: 10px;
+  background-color: white;
+  height: 600px;
+  width: 380px;
+}
+
+/* setting services content's background and styling */
+
+.servicesVideo {
+  position: relative;
+  background-color: rgba(38, 122, 148, 0.9);
+  min-height: 60vh;
+}
+
+/* styling the videos on yoga, meditation, healthy habits and stretching pages */
+
+video {
+  float: left;
+  padding-bottom: 2%;
+}
+
+/* styling the audios on yoga, meditation, healthy habits and stretching pages */
+
+audio {
+  float: left;
+  padding-bottom: 2%;
+}
+
+/* the links for all services on each services page */
+
+.otherservices {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.otherservices a {
+  font-size: small;
+}
+
+/* styling of sitemap contents */
+
+.mapSite {
+  margin: 2% 0% 0% 8%;
+  float: left;
+  padding-left: 2%;
+  text-align: center;
+}
+
+.mapSite a {
+  margin-top: 7%;
+  display: block;
+  font-size: 18px;
+}
+
+.mapSite p {
+  margin-top: 8%;
+  font-size: x-large;
+}
+
+.mapSite a:hover {
+  color: rgb(2, 54, 54);
+}
+
+/* styling of the audio display on all the services pages */
+
+.music {
+  position: relative;
+  width: 300px;
+  /* background: rgba(160, 99, 58, 0.5); */
+  float: left;
+  margin: 4%;
+  margin: 2% 150px;
+}
+
+.music .box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.music .box img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music audio {
+  width: 100%;
+  outline: none;
+  object-fit: cover;
+}
+
+audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-panel {
+  background-color: #02cfeb6e;
+  color: #0c3c72;
+}
+
+/* styling of the meal planners background */
+
+.Meal {
+  background-color: #063031;
+  width: 700px;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 15px;
+  padding: 1%;
+}
+
+/* styling of the planner container */
+
+.Planner {
+  width: 1200px;
+  margin: auto;
+}
+
+
+/* services */
+.serviceVideo{
+  margin: auto;
+  padding:0 25% 0 25%;
+}
+.form-control{
+  color: black;
+}
+.duration{
+  color: black;
+}
+
+.btn-primary {
+  background-color: black;
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 23px;
+  
+}
+
+.btn-outline-dark {
+    background-color: black;
+    padding: 2%, 5%, 2%, 5%;
+    /* height: 300px; */
+    margin: 2%;
+    border-radius: 25px;
+    padding: .2% 6% .2% 6%;
+}
+.form-content{
+padding-top: 4%;
+}
+
+.text-danger{
+  color: red;
+}

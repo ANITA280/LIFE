@@ -1,0 +1,73 @@
+
+
+body{
+    background-color:rgba(38, 122, 148, 0.7);
+    color:white;
+}
+div {
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Impact;
+    
+
+}
+
+button {
+    width: 600px;
+    height: 80px;
+    background-color: rgb(6, 56, 63);
+    color: white;
+    border-radius: 15px;
+    font-size: larger;
+
+}
+p{
+        font-size: 44px;
+        
+}
+
+#id{ 
+    font-size: 35px;
+}
+
+button:hover{
+    background-color: rgba(11, 89, 116, 0.267);
+}
+img{
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin-left:8% ;
+}
+#meals p{
+    font-size: 40px;
+    height: 500px;
+    padding:4%;
+    width: 1220px;
+    
+    
+}
+#meals div{
+  
+    margin-bottom: 2%;
+}
+h1{
+    display:none;
+    
+}
+select{
+   text-align: center;
+    width:150px;
+    font-size: larger;
+    background-color: rgb(5, 32, 39);
+    color: white;
+    
+    }
+    .label{
+        font-size: 30px;
+        margin: 2%;
+    }
+    
